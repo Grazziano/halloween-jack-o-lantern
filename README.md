@@ -1,38 +1,51 @@
-Aqui está o README para o projeto "Jack O Lantern":
+# 🎃 Jack O' Lantern - Halloween Animation
+
+Este projeto é uma página web interativa com uma lanterna de abóbora animada para celebrar o Halloween. Ele foi desenvolvido utilizando **HTML** e **CSS** para criar uma experiência visual divertida e temática.
+
+## ✨ Funcionalidades
+
+- **Animação Interativa**: A abóbora tem olhos e boca que se movem de maneira animada, criando um efeito de vida.
+- **Efeito Tipográfico**: O texto "Happy Halloween" possui uma animação que altera o espaçamento entre as letras, adicionando uma atmosfera festiva.
+- **Design Responsivo**: O layout se adapta a diferentes tamanhos de tela, garantindo uma boa exibição em qualquer dispositivo.
+
+## 📂 Estrutura do Projeto
+
+O projeto é composto por dois arquivos principais:
+
+### `index.html`
+Este arquivo contém a estrutura básica da página, com as seguintes seções:
+- **Lanterna de abóbora**: Inclui os elementos visuais para os olhos, boca e formato da lanterna.
+- **Texto "Happy Halloween"**: Exibe o título com animação.
+
+### `style.css`
+Este arquivo define o estilo e as animações, com os seguintes aspectos:
+- **@keyframes**: Controla a animação dos olhos, boca, texto e da face da abóbora.
+- **Cores temáticas**: Tons de **orangered**, **amarelo** e **preto** criam uma atmosfera assustadora e típica do Halloween.
+- **Fonte personalizada**: A fonte **Bungee**, do Google Fonts, é utilizada para dar um estilo retrô e divertido ao texto.
+
+## 🚀 Como Executar o Projeto
+
+1. **Clone ou faça o download** deste repositório.
+2. Abra o arquivo `index.html` diretamente em qualquer navegador moderno para visualizar a animação.
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5**: Estrutura da página web.
+- **CSS3**: Estilização e animação.
+- **Google Fonts**: A fonte **Bungee** foi utilizada para o texto.
+
+## 👁️ Pré-visualização
+
+A página exibe uma abóbora animada com olhos e boca dinâmicos, e o texto "Happy Halloween" com animação de espaçamento de letras. O design usa cores vibrantes e efeitos para capturar o espírito do Halloween.
 
 ---
 
-# Jack O Lantern 🎃
+### 📸 Captura de Tela
 
-Este é um projeto simples de página web que exibe uma animação de uma lanterna de abóbora (Jack O' Lantern) para celebrar o Halloween. O projeto utiliza HTML e CSS para criar efeitos visuais e animações.
-
-## Estrutura do Projeto
-
-### Arquivos principais:
-
-- `index.html`: Estrutura HTML da página, contendo os elementos visuais como a lanterna, olhos e boca, além de uma mensagem de "Happy Halloween".
-- `style.css`: Estilos CSS responsáveis pela aparência e animação da lanterna e do texto.
-
-## Funcionalidades
-
-- **Animação da lanterna**: A abóbora é animada com olhos que se movem, boca que cresce e um texto com espaçamento animado entre as letras.
-- **Design responsivo**: O layout é ajustado para diferentes tamanhos de tela, garantindo uma boa visualização em dispositivos móveis.
-- **Tema Halloween**: Cores como laranja, amarelo e orangered são usadas para criar uma atmosfera de Halloween.
-
-## Como visualizar
-
-1. Clone o repositório ou baixe o código.
-2. Abra o arquivo `index.html` em um navegador da web para visualizar a página animada.
-
-## Tecnologias Utilizadas
-
-- **HTML5**: Utilizado para a estrutura da página.
-- **CSS3**: Utilizado para estilização e animações da lanterna e do texto.
-
-## Pré-visualização
-
-A página apresenta uma lanterna de abóbora no centro com olhos e boca animados. O título "Happy Halloween" aparece com uma animação de espaçamento entre as letras.
+![Captura de Tela do Projeto](./img/jack.png)
 
 ---
 
-Esse README descreve o projeto de forma clara, destacando as principais características e instruções para uso.
+## 🎃 Inspire-se com o Halloween!
+
+Sinta-se à vontade para modificar ou melhorar o design para criar sua própria versão desta página temática!

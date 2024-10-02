@@ -1,0 +1,187 @@
+/* Animações aprimoradas para uma transição mais suave e dinâmica */
+@keyframes eyes {
+  0% {
+    margin-top: 10px;
+  }
+  100% {
+    margin-top: 0px;
+    border-bottom-color: yellow;
+    box-shadow: inset 0 0 40px orangered;
+  }
+}
+
+@keyframes mouth {
+  0% {
+    height: 50px;
+  }
+  100% {
+    height: 120px;
+    background-color: yellow;
+    box-shadow: inset 0 0 50px orangered;
+  }
+}
+
+@keyframes letter {
+  0% {
+    letter-spacing: 0;
+  }
+  100% {
+    letter-spacing: 15px;
+  }
+}
+
+@keyframes face {
+  0% {
+    margin: 0 40px;
+  }
+  100% {
+    margin: -20px 40px;
+  }
+}
+
+@keyframes lanternGlow {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 30px 10px orangered;
+  }
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px 20px orangered;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+/* Ajustes de layout para centralizar e melhorar o impacto visual */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Bungee', cursive;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  color: orangered;
+  font-size: 100px;
+}
+
+h1 span {
+  display: block;
+  font-size: 0.7em;
+  color: orange;
+  text-shadow: 0 5px #964527;
+  animation: letter 1.5s infinite alternate;
+}
+
+.lantern {
+  width: 350px;
+  height: 300px;
+  background-color: orangered;
+  margin: 80px auto;
+  border-width: 0 30px;
+  border-style: solid;
+  border-color: #ff6830;
+  border-radius: 100px;
+  position: relative;
+  animation: lanternGlow 2s infinite alternate;
+}
+
+.lantern:before,
+.lantern:after {
+  content: '';
+  width: 60px;
+  top: 0;
+  background-color: #000;
+  position: absolute;
+  left: -120px;
+  top: 0;
+  margin: 20px 0;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 2000px;
+  border-width: 0 0 20px 20px;
+  border-color: #222;
+  border-style: solid;
+}
+
+.lantern::after {
+  left: auto;
+  right: -120px;
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: -10px 40px;
+  background-color: orangered;
+  border-radius: 70px;
+  border: 3px solid #ff6830;
+  animation: face 2s infinite alternate;
+}
+
+.face:before {
+  content: '';
+  width: 40px;
+  height: 30px;
+  background-color: forestgreen;
+  position: absolute;
+  left: 50%;
+  top: -60px;
+  transform: translateX(-50%);
+  border-width: 0 10px 20px 10px;
+  border-style: solid;
+  border-color: darkgreen darkgreen #0a330a;
+  border-radius: 10px;
+}
+
+.eyes {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  animation: eyes 2s infinite alternate;
+}
+
+.eyes:before,
+.eyes:after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-width: 50px;
+  border-style: solid;
+  margin: 30px;
+  border-color: transparent transparent #222 transparent;
+  animation: eyes 2s infinite alternate;
+}
+
+.eyes:after {
+  border-top-right-radius: 100%;
+}
+
+.eyes:before {
+  border-top-left-radius: 100%;
+}
+
+.mouth {
+  width: 150px;
+  height: 40px;
+  background-color: #222;
+  border-top: 20px dotted orangered;
+  border-bottom: 10px dotted orangered;
+  border-radius: 0px;
+  margin: 30px auto 0;
+  animation: mouth 2s infinite alternate;
+}
